@@ -1,0 +1,18 @@
+.line-with-arrow {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+}
+
+.line-with-arrow::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #000;
+}
